@@ -1,7 +1,11 @@
+
 <?php
-/**
- * Created by PhpStorm.
- * User: lict
- * Date: 12/11/14
- * Time: 11:50 PM
- */ 
+$city  = "San Francisco";
+$state = "CA";
+$event = "SIGGRAPH";
+
+$location_vars = array("city", "state");
+
+$result = compact("event", "nothing_here", $location_vars);
+print_r($result);
+?>
