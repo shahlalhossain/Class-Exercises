@@ -14,7 +14,8 @@ if (mysqli_connect_errno())
 
 
 
-$query = "INSERT INTO `students`.`users`(`first_name`, `last_name`, `phone`) VALUES ('$firstName', '$lastName', '$phone')";
+$query = "INSERT INTO `students`.`users`(`first_name`, `last_name`, `phone`)
+          VALUES ('$firstName', '$lastName', '$phone')";
 
 mysqli_query($link, $query);
 

@@ -2,7 +2,7 @@
 
 $link = mysqli_connect("localhost", "root", "479874", "students");
 
-$query = "SELECT * FROM users;";
+$query = "SELECT * FROM users";
 
 $result = mysqli_query($link, $query);
 
