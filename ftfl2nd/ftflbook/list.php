@@ -32,7 +32,10 @@ $result = mysqli_query($link, $query);
         <td>Password</td>
         <td>Date of Birth</td>
         <td>Gender</td>
+        <td>Hobby</td>
+        <td>Favorite Food</td>
         <td>Comments</td>
+        <td>Photo</td>
         <td>Created</td>
         <td>Modified</td>
         <td>Action</td>
@@ -49,7 +52,10 @@ $result = mysqli_query($link, $query);
             <td><?php echo $row['password']?></td>
             <td><?php echo $row['dob']?></td>
             <td><?php echo $row['gender']?></td>
+            <td><?php echo $row['hobby']?></td>
+            <td><?php echo $row['favorite_food']?></td>
             <td><?php echo $row['comments']?></td>
+            <td><?php echo $row['photo']?></td>
             <td><?php echo $row['created']?></td>
             <td><?php echo $row['modified']?></td>
 

@@ -59,7 +59,7 @@ $result = mysqli_query($link, $query);
             <td><?php echo $row['modified']?></td>
 
             <td>
-                <a href="delete.php?id=<?php echo $row['id']?>">Edit</a> |
+                <a href="edit.php?id=<?php echo $row['id']?>">Edit</a> |
                 <a href="delete.php?id=<?php echo $row['id']?>">Delete</a>
             </td>
         </tr>

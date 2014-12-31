@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -6,28 +5,21 @@
     <title></title>
 </head>
 <body style="text-align: center; width: 100%; height: 100%;">
-
-<form action="add.php" method="POST">
-
-<label>First Name</label>
-<input type="text" name="first_name" />
-<br>
-
-<label>Last Name</label>
-<input type="text" name="last_name" />
-<br>
-
-<label>User Email: </label>
-<input type="email" name="email" />
-<br>
-
-<label>Password: </label>
-<input type="password" name="password" />
-<br>
-
- <label>Date of Birth: </label>
+<form action="add.php" method="POST" enctype="multipart/form-data">
+    <label>First Name</label>
+    <input type="text" name="first_name" />
+    <br>
+    <label>Last Name</label>
+    <input type="text" name="last_name" />
+    <br>
+    <label>User Email: </label>
+    <input type="text" name="email" />
+    <br>
+    <label>Password: </label>
+    <input type="password" name="password" />
+    <br>
+    <label>Date of Birth: </label>
     <select name="year">
-
         <option selected>Year</option>
         <option value="1980">1980</option>
         <option value="1981">1981</option>
@@ -50,9 +42,7 @@
         <option value="1998">1998</option>
         <option value="1999">1999</option>
         <option value="2000">1990</option>
-
     </select>
-
     <select name="month">
         <option selected>Month</option>
         <option value="01">January</option>
@@ -67,9 +57,7 @@
         <option value="10">October</option>
         <option value="11">November</option>
         <option value="12">December</option>
-
     </select>
-
     <select name="day">
         <option selected>Day</option>
         <option value="1">1</option>
@@ -103,23 +91,48 @@
         <option value="29">29</option>
         <option value="30">30</option>
         <option value="31">31</option>
+    </select>
+    <br>
+    <label>Gender: </label>
+    <input type="radio" name="gender" value="Male" />Male
+    <input type="radio" name="gender" value="Female" />Female
+    <br>
 
+    <label>Hobby :</label>
+    <input type="checkbox" name="hobby" value="Gardening">Gardening<br>
+    <input type="checkbox" name="hobby" value="Reading">Reading<br>
+    <input type="checkbox" name="hobby" value="Dancing">Dancing<br>
+    <input type="checkbox" name="hobby" value="Singing">Singing<br>
+    <input type="checkbox" name="hobby" value="Travelling">Travelling<br>
+    <input type="checkbox" name="hobby" value="Drawing">Drawing<br>
+    <input type="checkbox" name="hobby" value="Game & Sports">Game & Sports
+    <br>
+
+
+    <label>Favorite Foods: </label>
+    <select name="favorite_food" multiple>
+        <option value="Nanna Biriani">Nanna Biriani</option>
+        <option value="Vuna Khichuri">Vuna Khichuri</option>
+        <option value="Kacci Biriani">Kacci Biriani</option>
+        <option value="Grilled Chicken">Grilled Chicken</option>
+        <option value="Spicy Vegetable">Spicy Vegetable</option>
+        <option value="Fried Rice">Fried Rice</option>
+        <option value="Chicken Soup">Chicken Soup</option>
+        <option value="Mutton Curry">Mutton Curry</option>
     </select>
     <br>
 
-<label>Gender: </label>
-<input type="radio" name="gender" value="Male" />Male
-<input type="radio" name="gender" value="Female" />Female
-<br>
-
-<label>Comments: </label>
-<textarea name="comments" cols="20" rows="5"></textarea>
-<br>
-
-<button type="submit">Submit</button>
+    <label>Comments: </label>
+    <textarea name="comments" cols="20" rows="5"></textarea>
+    <br>
 
 
+    <label>Upload Your Photo :</label>
+    <input type="file" name="photo">
+    <br>
+
+
+    <button type="submit">Submit</button>
 </form>
 </body>
 </html>
-
