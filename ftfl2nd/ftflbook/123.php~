@@ -1,0 +1,18 @@
+
+<?php
+
+//$id = $_GET['id'];
+
+$link = mysqli_connect("localhost", "root", "lict@2", "ftfl2nd");
+
+$query = "SELECT * FROM ftflbook WHERE id = 84";
+
+$result = mysqli_query($link, $query);
+
+$row = mysqli_fetch_assoc($result);
+
+?>
+
+
+
+<?php echo "$row['dob']"; ?>
