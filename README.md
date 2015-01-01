@@ -1,4 +1,4 @@
 Class Exercises
 ==============
 
-Our Class Works @FTFL
+Our FTFL-PHP Classes Home Works and Exercises
