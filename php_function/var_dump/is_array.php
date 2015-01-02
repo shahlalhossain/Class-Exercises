@@ -1,11 +1,11 @@
 
 <?php
-$yes = array('this', 'is', 'an array');
+$array = array('this', 'is', 'an array');
 
-echo is_array($yes) ? 'Array' : 'not an Array';
+echo is_array($array) ? 'Array' : 'NOT an Array';
 echo "\n";
 
-$no = 'this is a string';
+$string = 'this is a string';
 
-echo is_array($no) ? 'Array' : 'not an Array';
+echo is_array($string) ? 'Array' : 'NOT an Array';
 ?>
