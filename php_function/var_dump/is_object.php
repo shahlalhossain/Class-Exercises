@@ -1,7 +1,6 @@
 
 <?php
-// Declare a simple function to return an 
-// array from our object
+// Declare a simple function to return an array from our object
 function get_students($obj)
 {
     if (!is_object($obj)) {
@@ -11,10 +10,9 @@ function get_students($obj)
     return $obj->students;
 }
 
-// Declare a new class instance and fill up 
-// some values
+// Declare a new class instance and fill up some values
 $obj = new stdClass();
-$obj->students = array('Kalle', 'Ross', 'Felipe');
+$obj->students = array('Shahlal', 'Kamal', 'Jamal', 'Fatima', 'Habiba');
 
 var_dump(get_students(null));
 var_dump(get_students($obj));
