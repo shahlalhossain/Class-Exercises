@@ -1,6 +1,4 @@
-
-//Example #1 isset() Examples
-
+// Example #1 isset() Examples
 <?php
 
 $var = '';
@@ -14,7 +12,7 @@ if (isset($var)) {
 // the return value of isset().
 
 $a = "test";
-$b = "anothertest";
+$b = "another test";
 
 var_dump(isset($a));      // TRUE
 var_dump(isset($a, $b)); // TRUE
@@ -31,11 +29,7 @@ var_dump(isset($foo));   // FALSE
 
 
 
-
-//Example #2 isset() Examples
-
-
-
+// Example #2 isset() Examples
 <?php
 
 $a = array ('test' => 1, 'hello' => NULL, 'pie' => array('a' => 'apple'));
@@ -57,12 +51,7 @@ var_dump(isset($a['cake']['a']['b']));  // FALSE
 
 
 
-
-
-//Example #3 isset() Examples
-
-
-
+// Example #3 isset() Examples
 <?php
 $expected_array_got_string = 'somestring';
 var_dump(isset($expected_array_got_string['some_key']));
