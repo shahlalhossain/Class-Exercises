@@ -1,18 +1,18 @@
 
 <?php
-// $session_data contains a multi-dimensional array with session
+// $sessionData contains a multidimensional array with session
 // information for the current user.  We use serialize() to store
 // it in a database at the end of the request.
 
-$conn = odbc_connect("webdb", "php", "chicken");
-$stmt = odbc_prepare($conn,
-    "UPDATE sessions SET data = ? WHERE id = ?");
-$sqldata = array (serialize($session_data), $_SERVER['PHP_AUTH_USER']);
-if (!odbc_execute($stmt, $sqldata)) {
-    $stmt = odbc_prepare($conn,
-        "INSERT INTO sessions (id, data) VALUES(?, ?)");
-    if (!odbc_execute($stmt, $sqldata)) {
-        /* Something went wrong.. */
+$sessionData = serialize($_SESSION);
+
+$databaseConnection = odbc_connect("web_sessions", "root", "password");
+$queryStatement = odbc_prepare($databaseConnection, "UPDATE sessions SET data = ? WHERE id = ?");
+$serializedSessionData = array(serialize($_SESSION), $_SERVER['PHP_AUTH_USER']);
+if (!odbc_execute($queryStatement, $serializedSessionData)) {
+    $queryStatement = odbc_prepare($databaseConnection, "INSERT INTO sessions (id, data) VALUES(?, ?)");
+    if (!odbc_execute($queryStatement, $serializedSessionData)) {
+        /* Do when something went wrong */
     }
 }
 ?>
