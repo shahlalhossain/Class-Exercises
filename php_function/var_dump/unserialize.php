@@ -4,10 +4,10 @@
 // $session_data array from the string selected from a database.
 // This example complements the one described with serialize().
 
-$conn = odbc_connect("webdb", "php", "chicken");
-$stmt = odbc_prepare($conn, "SELECT data FROM sessions WHERE id = ?");
+$databaseConnection = odbc_connect("web_sessions", "root", "password");
+$queryStatement = odbc_prepare($databaseConnection, "SELECT data FROM sessions WHERE id = ?");
 $sqldata = array($_SERVER['PHP_AUTH_USER']);
-if (!odbc_execute($stmt, $sqldata) || !odbc_fetch_into($stmt, $tmp)) {
+if (!odbc_execute($queryStatement, $sqldata) || !odbc_fetch_into($queryStatement, $tmp)) {
     // if the execute or fetch fails, initialize to empty array
     $session_data = array();
 } else {
