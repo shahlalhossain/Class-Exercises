@@ -1,4 +1,3 @@
-
 <?php
 $num = 5;
 $location = 'tree';
