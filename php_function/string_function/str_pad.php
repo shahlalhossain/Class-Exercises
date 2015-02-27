@@ -1,4 +1,3 @@
-
 <?php
 $input = "Alien";
 echo str_pad($input, 10);                      // produces "Alien     "
