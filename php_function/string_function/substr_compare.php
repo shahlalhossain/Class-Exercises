@@ -1,4 +1,3 @@
-
 <?php
 echo substr_compare("abcde", "bc", 1, 2); // 0
 echo substr_compare("abcde", "de", -2, 2); // 0
