@@ -1,4 +1,3 @@
-
 <?php
 $var = 'ABCDEFGH:/MNRPQR/';
 echo "Original: $var<hr />\n";
