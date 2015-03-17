@@ -1,9 +1,5 @@
 <?php
-
-
 //print_r($_POST);
-
-
 $code = $_POST['code'];
 $track = $_POST['track'];
 $fullname = $_POST['fullname'];

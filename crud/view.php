@@ -42,6 +42,6 @@ $row = mysqli_fetch_assoc($result);
 
 </table>
 
-<a href="list.php">Go to Home</a>
+<a href="list.php">Goto Home</a>
 
 

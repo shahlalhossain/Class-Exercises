@@ -41,10 +41,11 @@ CREATE TABLE IF NOT EXISTS `multiple` (
 --
 
 INSERT INTO `multiple` (`id`, `full_name`, `hobby`, `preferred_location`, `created`, `modified`) VALUES
-(7, 'Shahlal Hossain', 'Gardening,Reading,Dancing,Singing', 'Dhaka,Rajshahi,Chittagong,Sylhet,Khulna,Jessore', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(8, 'Shahlal Hossain', 'Gardening,Reading,Dancing,Singing', 'Dhaka,Rajshahi,Chittagong,Sylhet,Khulna,Jessore', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(9, 'dfhasdhfjh', 'Gardening,Reading', 'Dhaka,Rajshahi,Chittagong,Sylhet', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(10, 'dfhasdhfjh', 'Gardening,Reading', 'Dhaka,Rajshahi,Chittagong,Sylhet', '2015-01-01 08:26:50', '2015-01-01 14:26:50');
+(1, 'Shahlal Hossain', 'Gardening,Reading,Traveling', 'Dhaka,Rajshahi,Chittagong,Sylhet,Khulna,Jessore', '2015-01-01 08:26:50', '2015-01-01 08:26:50'),
+(2, 'Kamal Hossain', 'Gardening,Reading,Traveling', 'Dhaka,Rajshahi,Chittagong,Sylhet,Khulna,Jessore', '2015-01-01 08:26:50', '2015-01-01 08:26:50'),
+(3, 'Jamal Hossain', 'Gardening,Reading,Traveling', 'Dhaka,Rajshahi,Chittagong,Sylhet', '2015-01-01 08:26:50', '2015-01-01 08:26:50'),
+(4, 'Habiba Khatun', 'Gardening,Reading,Traveling', 'Dhaka,Rajshahi,Chittagong,Sylhet', '2015-01-01 08:26:50', '2015-01-01 14:26:50'),
+(5, 'Fatima Jahan', 'Gardening,Reading,Traveling', 'Dhaka,Rajshahi,Chittagong,Sylhet', '2015-01-01 08:26:50', '2015-01-01 14:26:50');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
